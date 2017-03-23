@@ -1,0 +1,47 @@
+
+<html>
+
+
+<h1> sign up!</h1>
+
+<div class = 'flash'>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+
+</div>
+
+
+<form method = 'post'>
+  Name:<br>
+  <input type="text" name="name"><br> 
+  Email Address:<br>
+  <input type="text" name="email"><br>
+  Password:<br>
+  <input type="password" name="password"><br>
+ 
+  Art:<br>
+  <input type="checkbox" name="art" value = "draw">draw<br>
+  <input type="checkbox" name="art" value = "cook">cook<br>
+  <input type="checkbox" name="art" value = "play music">play music<br>
+  <input type="checkbox" name="art" value = "dance">dance<br>
+  <input type="text" name="art" value ="else"> <br>
+
+
+  Erea:<br>
+  <input type="checkbox" name="erea" value = "north">north<br>
+  <input type="checkbox" name="erea" value = "south">south<br>
+  <input type="checkbox" name="erea" value = "east">east<br>
+  <input type="checkbox" name="erea" value = "west">west<br>
+
+    <br>
+   <input type="submit" value="Create Account">
+</form>
+</html>

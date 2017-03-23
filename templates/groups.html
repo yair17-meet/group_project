@@ -1,0 +1,25 @@
+<html>
+
+<form>
+	<input type="search" name="search">
+	<input type="button" name="search" value="search">
+
+</form>
+
+
+<div>
+	
+	<ul>
+		{%for group in groups%}
+			<li>
+				<h4>name:   |{{group.name}}|   topic:   |{{group.topic}}|</h4>
+				</li>
+		{%endfor%}
+	</ul>
+	
+
+</div>
+
+
+
+</html>

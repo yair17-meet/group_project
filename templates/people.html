@@ -1,0 +1,29 @@
+<html>
+
+
+
+<form>
+	<input type="search" name="people">
+	<input type="button" name="people" value="search">
+
+
+</form>
+
+<div>
+	<h2>people</h2>
+</div>
+
+<div>
+	<ul>
+		
+		{%for person in people%}
+			<li>
+				<h4>name:   |{{person.username}}|   art:   |{{person.art}}|   erea:   |{{person.erea}}|</h4>
+			</li>
+		{%endfor%}
+	</ul>
+
+</div>
+
+
+</html>

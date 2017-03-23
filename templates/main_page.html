@@ -1,0 +1,54 @@
+
+<html>
+<div style="background:#444">
+  <img src="static/sign_1.png">
+
+</div>
+
+<div style="background:#bbb">
+  
+ <h1> <a href="about_us">about us</a>
+  <a href="sign_up">sign up</a>
+  <a href="the_team">the team</a>
+ </h1>
+
+
+</div>
+
+<div style="background:#999">
+  <h1> sign in! </h1>
+
+  <div class = 'flash'>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+
+  </div>
+
+
+  <form method = 'post'>
+    Name:<br>
+    <input type="text" name="name"><br>
+    Password:<br>
+    <input type="password" name="password">
+    <input type="submit" value="login">
+  </form>
+
+  <h3>don't have an account? sing up <a href="sign_up">here</a></h3>
+
+</div>
+
+<div style="background:#ddd">
+  <p>about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us about us </p>  
+
+
+</div>
+
+</html>
