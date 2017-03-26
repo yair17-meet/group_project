@@ -8,7 +8,6 @@ from sqlalchemy import create_engine, func
 from passlib.apps import custom_app_context as pwd_context
 from flask import session as login_session
 from flask import Flask, url_for, flash, redirect, request
-
 ID = None
 
 app = Flask(__name__)
@@ -108,6 +107,6 @@ def the_team_html():
 
 
 
-
 if __name__=='__main__':
 	app.run(debug=True)
+	
